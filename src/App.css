@@ -1,5 +1,6 @@
 body {
   font-family: 'Exo', sans-serif;
+  background-color: #ffffff;
 }
 .App {
   text-align: center;
@@ -7,7 +8,6 @@ body {
 
 .content-wrapper {
   width: 100%;
-  viewport-fit: ;
 }
 
 
