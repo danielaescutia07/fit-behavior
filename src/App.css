@@ -1,13 +1,22 @@
-body {
-  font-family: 'Exo', sans-serif;
-  background-color: #ffffff;
-}
 .App {
   text-align: center;
+  display: flex;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
-.content-wrapper {
-  width: 100%;
+#content-wrapper {
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #2f3e46;
+}
+#content-wrapper:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 

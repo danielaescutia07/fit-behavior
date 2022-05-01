@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from 'antd';
 import './App.css';
 
 //*Custom Components
@@ -10,11 +11,9 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <div id='content-wrapper'>
+      <Card id='content-wrapper'>
         <HomePage />
-      </div>
-      <Footer />
+      </Card>
     </div>
   );
 }
