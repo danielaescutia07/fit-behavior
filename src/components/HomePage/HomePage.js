@@ -23,8 +23,8 @@ function HomePage() {
 
   const navigate = useNavigate();
 
-  const routeToOptions = () => {
-    navigate('/options');
+  const routeTo = (page) => {
+    navigate(page);
   };
 
   return (
@@ -34,7 +34,8 @@ function HomePage() {
           <img className='home-image' src={image} alt={imageMsg} />
         </Col>
         <Col className='col-row'>
-          <Button onClick={routeToOptions} className='home-button'>Get Fit!</Button>
+          <Button onClick={() => routeTo('/options')} className='home-button'>Get Fit!</Button>
+          <Button onClick={() => routeTo('/about')} className='home-button'>About</Button>
         </Col>
       </Row>
   );

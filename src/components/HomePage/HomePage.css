@@ -39,6 +39,13 @@
   padding-bottom: 3%;
 }
 
+.col-row {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  
+}
+
 .home-button {
   width: 15%;
   background: none;
