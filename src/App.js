@@ -1,22 +1,25 @@
 import React from 'react';
 import { Card } from 'antd';
-import background from './images/background-img.jpeg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 //*Custom Components
-import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
+import Options from './components/Options/Options';
 import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
-    <div style={{ backgroundImage: `url(${background})`}} className="App">
       <Card id='content-wrapper'>
-        <Header />
-        <HomePage />
+        <Routes>
+          <Route path='/options' element={<Options />} />
+          <Route path='/' element={<HomePage />} />
+        </Routes>
+        <Footer />
+          
+        
       </Card>
-    </div>
   );
 }
 

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { Button, Row, Col } from 'antd';
+import Header from '../Header/Header';
 import './HomePage.css'
 
 const imageMsg = process.env.REACT_APP_IMG_MSG;
@@ -19,16 +21,20 @@ function HomePage() {
       })
   }, []);
 
+  const navigate = useNavigate();
+
+  const routeToOptions = () => {
+    navigate('/options');
+  };
+
   return (
       <Row className='home-wrapper'>
-        {/* <Col className='col-row'>
-          <h1 id='heading'>Fit Behavior</h1>
-        </Col> */}
+        <Header />
         <Col className='img-col'>
           <img className='home-image' src={image} alt={imageMsg} />
         </Col>
         <Col className='col-row'>
-          <Button className='home-button'>Get Fit!</Button>
+          <Button onClick={routeToOptions} className='home-button'>Get Fit!</Button>
         </Col>
       </Row>
   );
