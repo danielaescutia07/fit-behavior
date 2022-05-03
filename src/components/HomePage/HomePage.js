@@ -21,10 +21,10 @@ function HomePage() {
 
   return (
       <Row className='home-wrapper'>
-        <Col className='col-row'>
+        {/* <Col className='col-row'>
           <h1 id='heading'>Fit Behavior</h1>
-        </Col>
-        <Col className='col-row'>
+        </Col> */}
+        <Col className='img-col'>
           <img className='home-image' src={image} alt={imageMsg} />
         </Col>
         <Col className='col-row'>

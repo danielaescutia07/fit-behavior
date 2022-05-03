@@ -1,21 +1,12 @@
-#header {
-  margin: 5%;
-  top: 0;
-}
-
-/* h1 {
-  font-size: 5rem;
-}
-
-.animate-character
+#heading
 {
    text-transform: uppercase;
   background-image: linear-gradient(
     -200deg,
-    #414833 0%,
-    #656d4a 29%,
-    #a4ac86 75%,
-    #c2c5aa 100%
+    #6c757d 15%,
+    #adb5bd 29%,
+    #ced4da 75%,
+    #dee2e6 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -26,12 +17,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear reverse;
-  display: inline-block;
-      font-size: 5rem;
+      font-size: 3rem;
 }
 
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
-} */
+}

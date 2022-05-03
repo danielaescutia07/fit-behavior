@@ -1,5 +1,5 @@
 .home-wrapper {
-  padding: 2%;
+  padding: 0 1%;
 }
 
 #heading {
@@ -20,7 +20,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear reverse;
-      font-size: 5rem;
+      font-size: 3rem;
 }
 
 @keyframes textclip {
@@ -30,20 +30,20 @@
 }
 
 .home-image {
-  width: 75vw;
-  height: auto;
+  width: 70vw;
+  height: 60vh;
   box-shadow: 0 1px 5px 0 #adb5bd;
 }
 
-.col-row {
-  margin: 6% 1%;
+.img-col {
+  padding-bottom: 3%;
 }
 
 .home-button {
-  width: 20%;
+  width: 15%;
   background: none;
-  padding: 1%;
-  font-size: 1rem;
+  padding: .5%;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #dee2e6;
   border-radius: 5px;
