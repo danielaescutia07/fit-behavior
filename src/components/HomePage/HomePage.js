@@ -3,14 +3,14 @@ import axios from 'axios';
 import { Button, Row, Col } from 'antd';
 import './HomePage.css'
 
-const imageMsg = 'Oops! Something went wrong...'
-const ACCESS_KEY = 'VBhpjRajlNtDYginto40moaV5RhhtJ7wZ7HndOTJZww';
+const imageMsg = process.env.REACT_APP_IMG_MSG;
+const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
 function HomePage() {
   const [ image, setImage ] = useState({});
 
   useEffect(() => {
-    axios.get(`https://api.unsplash.com/photos/ObpCE_X3j6U?client_id=${ACCESS_KEY}`)
+    axios.get(`https://api.unsplash.com/photos/ObpCE_X3j6U?client_id=${accessKey}`)
       .then(res => {
         setImage(res.data.urls.regular)
       })
