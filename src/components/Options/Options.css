@@ -1,0 +1,57 @@
+.options-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15% 2%;
+}
+
+.options-card {
+  width: 25vw;
+  height: 40vh;
+  border: 5px solid black;
+  border-radius: 7px;
+  box-shadow: 0 3px 2px 1px #adb5bd;
+}
+
+.options-card h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #dee2e6;
+}
+
+.options-description {
+  font-size: .9rem;
+  font-weight: 200;
+  color: #dee2e6;
+}
+
+.options-button {
+  width: 45%;
+  background: none;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #dee2e6;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+}
+
+.options-heading {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -200deg,
+    #6c757d 15%,
+    #adb5bd 29%,
+    #ced4da 75%,
+    #dee2e6 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear reverse;
+      font-size: 2rem;
+}
