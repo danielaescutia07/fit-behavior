@@ -1,22 +1,30 @@
 import React from 'react'
-import { Button, Row, Col } from 'antd';
+import { useNavigate } from 'react-router-dom';
+import { Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import './Options.css';
 
 function Options() {
 
+  const navigate = useNavigate();
+
+  const routeTo = (page) => {
+    navigate(page);
+  };
+
   return (
-    <Row>
+    <Row className='row-wrapper'>
+      
       <Col span={24} className='options-wrapper'>
-        <div className='options-card recipes'>
-          <Button className='options-button'>View Recipes</Button>
+        <div className='options-card recipes' onClick={() => routeTo('/recipes')}>
         </div>
-        <div className='options-card workouts'>
-          <Button className='options-button'>View Workouts</Button>
+        <div className='options-card workouts' onClick={() => routeTo('/workouts')}>
         </div>
-        <div className='options-card playlist'>
-          <Button className='options-button'>View Playlists</Button>
+        <div className='options-card playlist' onClick={() => routeTo('/playlists')}>
         </div>
+      </Col>
+      <Col span={24}>
+        <h3 className='options-heading'>Select an Option</h3>
       </Col>
     </Row>
   );

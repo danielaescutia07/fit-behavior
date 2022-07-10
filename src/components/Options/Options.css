@@ -20,6 +20,12 @@ align-items: center;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.options-heading {
+  font-size: 3.5rem;
+  color: #dee2e6;
+  margin-bottom: 0;
+}
+
 .recipes {
   background-image: url('../../images/recipes.jpg');
   background-position: center;
@@ -39,18 +45,4 @@ align-items: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.options-button {
-  width: 50%;
-  height: auto;
-  font-size: 1rem;
-  font-weight: 700;
-  background-color: #ffffff;
-  opacity: 0.6;
-  padding: 1%;
-  color: #212529;
-  border-radius: 5px;
-  border: 1px solid #343a40;
-  margin-bottom: 0.5%;
 }
