@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Button, Row, Col } from 'antd';
 import Header from '../Header/Header';
+import 'antd/dist/antd.css';
 import './HomePage.css'
 
 const imageMsg = process.env.REACT_APP_IMG_MSG;
@@ -29,14 +30,19 @@ function HomePage() {
 
   return (
       <Row className='home-wrapper'>
-        <Header />
-        <Col className='img-col'>
+        <Col span={10} className='col-row'>
+          <Header />
+          <p className='description'>Staying fit should not be complicated. Fit Behavior provides options to choose from. Search for the perfect meal, workout and/or playlist. </p>
+          <div className='button-div'>
+            <Button size='large' ghost onClick={() => routeTo('/options')} className='home-button'>Get Fit!</Button>
+            <Button size='large' ghost onClick={() => routeTo('/about')} className='home-button'>About</Button>
+          </div>
+          
+        </Col>
+        <Col span={14} className='image-container'>
           <img className='home-image' src={image} alt={imageMsg} />
         </Col>
-        <Col className='col-row'>
-          <Button onClick={() => routeTo('/options')} className='home-button'>Get Fit!</Button>
-          <Button onClick={() => routeTo('/about')} className='home-button'>About</Button>
-        </Col>
+        
       </Row>
   );
 };

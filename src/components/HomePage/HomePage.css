@@ -1,5 +1,5 @@
 .home-wrapper {
-  padding: 0 1%;
+  padding: 1%;
 }
 
 #heading {
@@ -20,7 +20,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear reverse;
-      font-size: 3rem;
+      font-size: 5rem;
 }
 
 @keyframes textclip {
@@ -29,30 +29,33 @@
   }
 }
 
-.home-image {
-  width: 70vw;
-  height: 60vh;
-  box-shadow: 0 1px 5px 0 #adb5bd;
+.description {
+  font-size: 1.5rem;
+  color: #dee2e6;
 }
 
-.img-col {
-  padding-bottom: 3%;
+.image-container {
+  margin: auto;
+}
+
+.home-image {
+  width: 50vw;
+  height: 65vh;
+  box-shadow: 0 1px 5px 0 #adb5bd;
 }
 
 .col-row {
   display: flex;
-  justify-content: center;
-  gap: 5%;
-  
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 2% 0;
+}
+.button-div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .home-button {
-  width: 15%;
-  background: none;
-  padding: .5%;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
   color: #dee2e6;
-  border-radius: 5px;
-  border: 1px solid #dee2e6;
 }
